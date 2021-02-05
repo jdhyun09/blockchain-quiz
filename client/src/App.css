@@ -1,5 +1,15 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+
+.App{
+    font-famliy:'NanumSquare',san-serif;
+    font-size:17px;
+    line-height:1.5;
+}
+
 .hi {
     display: flex;
     margin: 0 auto;
     justify-content: center;
 }
+

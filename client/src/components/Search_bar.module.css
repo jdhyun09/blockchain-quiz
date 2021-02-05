@@ -16,10 +16,9 @@ header {
     border: 1px black solid;
 }
 
-.inner{
-    width: 600px;
-    display: flex;
-    justify-content: space-between;
-}
 
+
+Button{
+    width: 150px;
+}
 
