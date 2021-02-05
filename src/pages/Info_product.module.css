@@ -17,3 +17,17 @@ button{
   display: flex;
   float: right;
 }
+
+.b{
+  width: 35px; height: 32px;
+  margin-right: 5px;
+  border: 1px orange solid;
+}
+
+.cost{
+  font-size: 20px;
+}
+
+.Content{
+  height: 200px;
+}

@@ -19,22 +19,22 @@ let StyledButton = styled(Button)`
 
  const Navbar = () => {
     return (
-
         <div className={style.navbar_wrapper}>
         <div className={style.navbar_content}>
             <img src="/img/main_logo.png" className={style.logo}></img>
             <Space direction="horizontal">
             <Search className={style.search_bar} placeholder="동네이름, 물품명 등을 검색해보세요!" onSearch={onSearch} />
             </Space>
-            <Space direction="horizontal">
-            <span className={style.use}>이용방법</span>
-            <span className={style.use}>이용후기</span>
+            <Space className={style.buttons}  direction="horizontal">
+            <div className={style.use}>이용방법</div>
+            <div className={style.use}>이용후기</div>
             </Space>
             <Space direction="horizontal">
-            <StyledButton bgcolor='rgb(170, 170, 170)' color='white'>
+            <StyledButton className={style.log_b} bgcolor='rgb(170, 170, 170)' color='white'>
                 로그인
             </StyledButton>
-            <StyledButton bgcolor='#FC8046' color='white'>회원가입</StyledButton>
+            <StyledButton  className={style.b_b} bgcolor='#FC8046' color='white'>대여알림</StyledButton>
+            <img className={style.bang}src="img/bang.png"></img>
             </Space>
         </div>
         </div>

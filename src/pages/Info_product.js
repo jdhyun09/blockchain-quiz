@@ -20,6 +20,10 @@ const IconLink = ({ src, text }) => (
 
 const content = (
   <>
+    <Paragraph className={style.cost}>
+        3000원
+    </Paragraph>
+    <Divider/>
     <Paragraph>
         몇달 안쓰고 올립니다.
         다들 많이 구매해주세요.
@@ -41,10 +45,9 @@ class Info_product extends React.Component {
         return(
             <>
             <Navbar/>
-            <div>
-            
+            <div>   
             <div className={style.inner}>
-                <img className={style.main_img} src="https://developer.mozilla.org/static/img/favicon144.png"></img>
+                <img className={style.main_img} src="img/camera.png"></img>
                 <Divider/>    
                     <PageHeader
                     title="김승민"
@@ -52,18 +55,15 @@ class Info_product extends React.Component {
                     tags={<Tag color="blue">판매중</Tag>}
                     extra={[
                     <Button key="3"  type="primary" danger>대여하기 </Button>,
-                    <Button key="1" type="primary">
-                        추천
-                    </Button>
+                    <img className={style.b} src="img/thumb.png"/>,
                     ]}  
                 >
-                    <Content>
+                    <Content className={style.Content}>
                     {content}
                     </Content>
                 </PageHeader>
             </div>
             <Divider/>
-            <button>구매</button>
             </div>
         </>
         )
