@@ -11,10 +11,10 @@ class Home extends React.Component {
       return (
         <div>
           <Navbar/>
-          <img className={style.main_img} src="https://developer.mozilla.org/static/img/favicon144.png"></img>
-          <Recom_prod/>
-          <hr></hr>
-          <Hot_prod/>
+          <img className={style.main_img} src="img/main.jpg" usemap="#test"></img>
+          <map name="test"  id="test">
+          <area shape="rect" coords="0,0,100,100" href="https://www.naver.com/"/>
+          </map>
         </div>
       );
     }
