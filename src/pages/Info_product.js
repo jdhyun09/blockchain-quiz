@@ -2,6 +2,8 @@ import React from 'react';
 import Info_seller from '../components/Info_seller';
 import style from './Info_product.module.css';
 import Search_bar from '../components/Search_bar';
+
+
 const Info_product = () => {
     return(
         <div>

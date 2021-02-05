@@ -1,13 +1,21 @@
 import React from 'react'
 import style from './Product_search_result.module.css'
+import { Divider } from 'antd';
+
+//import { Comment, Tooltip, List } from 'antd';
+import moment from 'moment';
+
+
 const Product_search_result = () => { 
+
+
     return (
         <div className={style.box}>
-          <img className={style.img} src="https://developer.mozilla.org/static/img/favicon144.png"></img>
-            <div className={style.text_box} >
-              <div className={style.name} >상품명 </div>
-              <div className={style.explain} > 가격 </div>
-            </div>
+        <img src="img/coin.png"></img>
+        <Divider type="vertical" />
+        <div>제품명</div> 
+        <Divider type="vertical" />
+        <div>대여 기간</div>       
         </div>
       );
 } 

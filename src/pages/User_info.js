@@ -1,12 +1,9 @@
 import React from 'react';
-import { Input, Tooltip, Divider, Select, Button, DatePicker, Upload, Modal} from 'antd';
+import { Input, Tooltip, Divider, Select, Button, DatePicker, Upload, Modal,  Descriptions, Badge} from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
-import style from './Pro_reg.module.css'
-import { useState, useEffect } from 'react';
-
-const { TextArea } = Input;
+import style from './User_info.module.css'
+import Product_search_result from '../components/Product_search_result';
 const { Option } = Select;
-const { RangePicker } = DatePicker;
 
 
 function getBase64(file) {
@@ -19,7 +16,7 @@ function getBase64(file) {
 }
 
  
-  class  Pro_reg extends React.Component {
+  class User_info extends React.Component {
 
     state = {
       previewVisible: false,
@@ -59,74 +56,45 @@ function getBase64(file) {
         }
         return (
           <div className={style.inner}>
-
-              <h1><strong className={style.title} >상품등록</strong></h1>
+              <h1><strong>개인정보</strong></h1>
               <Divider />
               <div className={style.section}>
-                <div className={style.txt}>제목</div>
-                <Input placeholder="제목을 입력해주세요" />
+                <div className={style.txt}>사용자 지갑 주소</div>
+                <div className={style.adress}>1234567890 </div>
               </div>
               <Divider />
 
               <div className={style.section}>
-                <div className={style.txt} >카테고리</div>
-                <div>
-                  <Select defaultValue="전공책" style={{ width: 220 }}>
-                    <Option value="교양책">Jack</Option>
-                    <Option value="기타">Lucy</Option>
-                    <Option value="Yiminghe">yiminghe</Option>
-                  </Select>
-                </div>
+                <div >현재 보유 코인 </div>
+                <div className={style.money}>3533 clay</div>
               </div>
               <Divider />
               
 
               <div className={style.section}>
-                <div className={style.txt}>예치금 기간 설정</div>
-                <RangePicker />
+                <div className={style.txt}>대여 받은 물품</div>
+                <div className={style.Products}>
+                  <Product_search_result/>
+                  <Product_search_result/>
+                </div>
               </div>
               <Divider />
 
               <div className={style.section}>
-                <div className={style.txt} >가격</div>
-                <Input prefix="" suffix="Clay" />
+                <div className={style.txt} >대여 해준 물품</div>
+                <Product_search_result/>
+                
               </div>
               <Divider />
-
-              <div className={style.section}>
-              <Upload
-                action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
-                listType="picture-card"
-                fileList={fileList}
-                onPreview={this.handlePreview}
-                onChange={this.handleChange}
-              >
-                {uploadButton}
-              </Upload>
-              <Modal
-                visible={previewVisible}
-                title={previewTitle}
-                footer={null}
-                onCancel={this.handleCancel}
-              >
-                <img alt="example" style={{ width: '100%' }} src={previewImage} />
-              </Modal>
-              </div>
-              <Divider />
-
-              <div className={style.section}>
-                <TextArea rows={4}/>
-              </div>
-                <Divider />
               <div className={style.button_section}>
                 <Button className={style.summit_button} type="primary" size="large" danger>저장하기</Button>
               </div>
-            </div>
+              </div>
           );
     }
   }
 
-export default Pro_reg;
+export default User_info;
 
 
 
