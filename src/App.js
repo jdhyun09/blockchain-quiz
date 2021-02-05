@@ -1,29 +1,17 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { Login, About, User } from './pages';
+import { Login, Search_result,Home,Info_product } from './pages';
+import './App.css';
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Login</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/user">User</Link>
-              </li>
-            </ul>
-          </nav>
-
-          <Route exact path='/' component={Login}/>
-          <Route path='/about' component={About}/>
-          <Route path='/user' component={User}/>
+        <div className="hi">
+          <Route exact path='/Login' component={Login}/>
+          <Route path='/Search_result' component={Search_result}/>
+          <Route path='/Home' component={Home}/>
+          <Route path='/Info_product' component={Info_product}/>
         </div>
       </Router>
     );

@@ -1,0 +1,25 @@
+header {
+    position: fixed;
+    top: 0;
+    /* width: 100% */
+    left: 0;
+    right: 0;
+  
+    height: 50px;
+    padding: 1rem;
+    color: orange;
+    background: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+}
+
+.inner{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+

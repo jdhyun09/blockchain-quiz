@@ -4,7 +4,7 @@ import Product_search_result from '../components/Product_search_result';
 
 import Header from '../components/Header';
 
-  class Search_result extends React.Component {
+  class Product_buy extends React.Component {
     render() {
       return (
         <div>
@@ -17,4 +17,4 @@ import Header from '../components/Header';
     }
   }
 
-export default Search_result;
+export default Product_buy;

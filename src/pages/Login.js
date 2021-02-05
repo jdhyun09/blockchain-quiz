@@ -1,8 +1,11 @@
 import React from 'react';
-
+import style from './Login.module.css'
 const Login = () => {
     return(
                 <div class="inner_login">
+                  
+                  <h1 class="app_name">서비스 이름</h1>
+                  <img src="https://developer.mozilla.org/static/img/favicon144.png"></img>
                   <div class="login_tistory">
                       <form method="post" id="authForm" action="https://www.tistory.com/auth/login">
                           <input type="hidden" name="redirectUrl" value="https://blogpack.tistory.com/manage"/>
