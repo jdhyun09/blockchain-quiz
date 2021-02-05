@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Login, Search_result,Home,Info_product, Product_buy, Pro_reg } from './pages';
 import './App.css';
+import 'antd/dist/antd.css';
 
 class App extends Component {
   render() {

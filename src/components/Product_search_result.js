@@ -6,7 +6,7 @@ const Product_search_result = () => {
           <img className={style.img} src="https://developer.mozilla.org/static/img/favicon144.png"></img>
             <div className={style.text_box} >
               <div className={style.name} >상품명 </div>
-              <div className={style.explain} > 상품설명 </div>
+              <div className={style.explain} > 가격 </div>
             </div>
         </div>
       );
