@@ -3,7 +3,7 @@ import { Input, Tooltip, Divider, Select, Button, DatePicker, Upload, Modal} fro
 import { PlusOutlined } from '@ant-design/icons';
 import style from './Pro_reg.module.css'
 import { useState, useEffect } from 'react';
-
+import Navbar from '../components/Navbar';
 const { TextArea } = Input;
 const { Option } = Select;
 const { RangePicker } = DatePicker;
@@ -58,6 +58,8 @@ function getBase64(file) {
           profile_preview = <img className='profile_preview' src={this.state.previewURL}></img>
         }
         return (
+          <>
+          <Navbar/>
           <div className={style.inner}>
 
               <h1><strong className={style.title} >상품등록</strong></h1>
@@ -122,14 +124,10 @@ function getBase64(file) {
                 <Button className={style.summit_button} type="primary" size="large" danger>저장하기</Button>
               </div>
             </div>
+          
+          </>
           );
     }
   }
 
 export default Pro_reg;
-
-
-
-
-
-

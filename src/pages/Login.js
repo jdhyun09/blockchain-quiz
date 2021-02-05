@@ -1,41 +1,57 @@
 import React from 'react';
 import style from './Login.module.css'
+import {  Input, Divider, Upload, message, Button } from 'antd';
+import { InboxOutlined } from '@ant-design/icons';
 import Navbar from '../components/Navbar'
+
+const { Dragger } = Upload;
+
+const props = {
+  name: 'file',
+  multiple: true,
+  action: 'https://www.mocky.io/v2/5cc8019d300000980a055e76',
+  onChange(info) {
+    const { status } = info.file;
+    if (status !== 'uploading') {
+      console.log(info.file, info.fileList);
+    }
+    if (status === 'done') {
+      message.success(`${info.file.name} file uploaded successfully.`);
+    } else if (status === 'error') {
+      message.error(`${info.file.name} file upload failed.`);
+    }
+  },
+};
 
 const Login = () => {
     return(
-      <>
+          <>
               <Navbar />
-                <div class="inner_login">
-                  <h1 class="app_name">서비스 이름</h1>
-                  <img src="https://developer.mozilla.org/static/img/favicon144.png"></img>
-                  <div class="login_tistory">
-                      <form method="post" id="authForm" action="https://www.tistory.com/auth/login">
-                          <input type="hidden" name="redirectUrl" value="https://blogpack.tistory.com/manage"/>
-                          <fieldset>
-                            <legend class="screen_out">로그인 정보 입력폼</legend>
-                            <div class="box_login">
-                              <div class="inp_text">
-                                <label for="login_adress" class="screen_out">주소</label>
-                                <input type="email" id="loginId" name="loginId" placeholder="Adress" />
-                              </div>
-                            </div>
-                            <button type="submit" class="btn_login"  disabled>로그인</button>
-                            <div class="login_append">
-                                <div class="inp_chk"> 
-                                  <input type="checkbox" id="keepLogin" class="inp_radio"  name="keepLogin"/>
-                                  <label for="keepLogin" class="lab_g">
-                                    <span class="img_top ico_check"></span>
-                                    <span class="txt_lab">로그인 상태 유지</span>
-                                  </label>
-                                </div>
-                            </div>  
-                          </fieldset>
-                      </form>
+                <div className={style.Inner_login}>
+                  <h1><strong>로그인</strong></h1>
+                  <Divider/>
+                  <div>
+                  <div className={style.txt}>지갑 파일</div>
+
+                  <Dragger {...props}>
+                    <p className="ant-upload-drag-icon">
+                      <InboxOutlined />
+                    </p>
+                    <p className="ant-upload-text">Click or drag file to this area to upload</p>
+                  </Dragger>
                   </div>
+                  <Divider/>
+                  <div className={style.section}>
+                    <div className={style.txt}>비밀번호</div>
+                    <Input.Password placeholder="input password" />
+                  </div>
+                <div className={style.button_section}>
+                <Button className={style.summit_button} type="primary" size="large" danger>로그인</Button>
                 </div>
-      </>
-              );
+              </div>
+                
+          </>
+          );
     }
 
 

@@ -3,6 +3,7 @@ import { Input, Tooltip, Divider, Select, Button, DatePicker, Upload, Modal,  De
 import { PlusOutlined } from '@ant-design/icons';
 import style from './User_info.module.css'
 import Product_search_result from '../components/Product_search_result';
+import Navbar from '../components/Navbar';
 const { Option } = Select;
 
 
@@ -55,6 +56,8 @@ function getBase64(file) {
           profile_preview = <img className='profile_preview' src={this.state.previewURL}></img>
         }
         return (
+          <>
+           <Navbar/>
           <div className={style.inner}>
               <h1><strong>개인정보</strong></h1>
               <Divider />
@@ -86,10 +89,12 @@ function getBase64(file) {
                 
               </div>
               <Divider />
+              
               <div className={style.button_section}>
                 <Button className={style.summit_button} type="primary" size="large" danger>저장하기</Button>
               </div>
               </div>
+            </>
           );
     }
   }
