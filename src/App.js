@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Login, Search_result,Home,Info_product, Product_buy, Pro_reg, User_info } from './pages';
 import './App.css';
 import 'antd/dist/antd.css';
+import 'bootstrap/dist/css/bootstrap.min.css';  // 부트스트랩 사용위해 필수
 
 class App extends Component {
   render() {
