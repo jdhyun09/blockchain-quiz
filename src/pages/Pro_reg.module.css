@@ -1,0 +1,55 @@
+.inner{
+  width: 664px;
+  margin-top: 74px;
+}
+
+.title {
+  font-size: 29px;
+  margin-bottom: 52px;
+}
+
+.section{
+  display: flex;
+  justify-content: space-between;
+  width: 664px;
+  height: 86px;
+  align-items: center;
+}
+
+.button_section{
+  margin-top: 57px;
+  width: 664px;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+}
+
+.txt{
+  margin-top: 35px;
+  width: 155px;
+  margin-bottom: 35px;
+  font-size: 14.2px;
+}
+
+
+
+h1{
+  text-align: center;
+  font-size: 29px;
+  margin-top: 74px;
+  margin-bottom: 52px;
+  
+}
+
+Divider {
+width: 300PX;
+}
+
+Selct {
+  width: 300PX;
+  }
+
+.summit_button{
+  width: 241px;
+  height: 57px;
+}

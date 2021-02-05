@@ -1,0 +1,83 @@
+.inner{
+  width: 646px;
+  margin-top: 74px;
+}
+
+.section{
+  display: flex;
+  justify-content: space-between;
+  width: 646px;
+  height: 86px;
+  align-items: center;
+}
+
+.button_section{
+  margin-top: 57px;
+  width: 664px;
+  display: flex;
+  justify-content: center;
+}
+
+.Products{
+  display: flex;
+  flex-direction:column;
+}
+
+
+.txt{
+  margin-top: 36.6px;
+  padding-top: 15.4px;
+  padding-bottom: 15.4px;
+  width: 141px;
+  margin-bottom: 36.6px;
+  font-size: 14.2px;
+}
+
+
+
+h1{
+  text-align: center;
+  font-size: 29px;
+  margin-top: 74px;
+  margin-bottom: 52px;
+  
+}
+
+Divider {
+width: 300PX;
+}
+
+Selct {
+  width: 300PX;
+  }
+
+.summit_button{
+  width: 241px;
+  height: 57px;
+}
+
+.adress{
+  width: 400px;
+  font-size: 14px;
+
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid black
+
+}
+
+.money{
+  width: 400px;
+  font-size: 14px;
+  text-align: center;
+
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black
+
+}
