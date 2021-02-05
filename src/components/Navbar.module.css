@@ -1,0 +1,36 @@
+.navbar_wrapper{
+    width:100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 1px 1px rgb(214, 214, 214);
+    text-align: center;
+    position: absolute;
+    top: 0;
+}
+.navbar_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    margin: auto auto;
+    width: 1090px;
+    height: 60px;
+    padding: 0 10%;
+}
+
+.logo{
+    position: relative;    
+}
+
+.search_bar{
+    width: 300px;
+    height: 30px;
+    font-size: 12px;
+}
+
+.use{
+    position: relative;
+    margin-top: 13px;
+    font-size: 14px;
+}
+
