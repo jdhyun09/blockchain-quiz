@@ -1,0 +1,16 @@
+
+.main_img{
+  width: 600px;
+  height: 450px;
+}
+
+.pro_exp{
+  height: 200px;
+  border: 1px black solid;
+}
+
+button{
+  display: flex;
+  width: 50px;
+  float: right;
+}
