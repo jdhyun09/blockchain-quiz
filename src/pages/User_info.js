@@ -63,7 +63,7 @@ function getBase64(file) {
               <Divider />
               <div className={style.section}>
                 <div className={style.txt}>사용자 지갑 주소</div>
-                <div className={style.adress}>1234567890 </div>
+                <div className={style.adress}>0x3dd78212c2a0b10abaf586084d8a52c46526e18c </div>
               </div>
               <Divider />
 

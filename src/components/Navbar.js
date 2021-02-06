@@ -72,7 +72,9 @@ const menu = (
             <img src="/img/main_logo.png" className={style.logo}></img>
             </Link>
             <Space direction="horizontal">
+            <Link to="/Search_result">
             <Search className={style.search_bar} placeholder="동네이름, 물품명 등을 검색해보세요!" onSearch={onSearch} />
+            </Link>
             </Space>
             <Space className={style.buttons}  direction="horizontal">
             <div className={style.use}>이용방법</div>
